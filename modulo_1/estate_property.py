@@ -12,7 +12,3 @@ class EstateProperty(models.Model):
     number_of_months = fields.Integer("# Months", required=True)
     active = fields.Boolean("Active", default=True)
     sequence = fields.Integer("Sequence", default=10)
-
-    _sql_constraints = [
-        ("check_number_of_months", "CHECK(number_of_months >=0", "The number of month cannot be negative.")
-    ]
