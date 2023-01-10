@@ -1,6 +1,6 @@
 {
     'name': "Un modulo",
-    'version': "",
+    'version': "1",
     'depends': ['base'],
     'author': "",
     'category': "",
