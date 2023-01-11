@@ -4,5 +4,8 @@
     'depends': ['base'],
     'author': "",
     'category': "",
-    'description': ""
+    'description': "",
+    'data': [
+        'views/estate_property_views.xml'
+    ]
 }
