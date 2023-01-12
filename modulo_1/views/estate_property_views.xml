@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <odoo>
-
-    <!-- Configuration/Lead Menu -->
     <record id="estate_property_action" model="ir.actions.act_window">
         <field name="name">Estate Property</field>
         <field name="res_model">estate.property</field>
