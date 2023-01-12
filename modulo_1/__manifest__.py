@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     'name': "Un modulo",
     'version': "1.1",
