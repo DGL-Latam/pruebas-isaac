@@ -14,4 +14,12 @@
             </p>
         </field>
     </record>
+
+    <menuitem id="menu_estate_property_action"
+              action="estate_property_action"
+              name="EPA"
+              groups="base.group_user"
+              sequence="10"
+    />
+
 </odoo>
