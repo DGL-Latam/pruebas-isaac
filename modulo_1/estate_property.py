@@ -8,7 +8,16 @@ class EstateProperty(models.Model):
     _description = "Estate Property Plans"
     _order = "sequence"
 
-    name = fields.Char("Plan", required=True, translate=True)
-    number_of_months = fields.Integer("# Months", required=True)
-    active = fields.Boolean("Active", default=True)
-    sequence = fields.Integer("Sequence", default=10)
+    name = fields.Char("Plan", required=True)
+    description = fields.Text("Description")
+    postcode = fields.Char("Postcode")
+    date_availability = fields.Date("Date Availability", required=True)
+    expected_price = fields.Float("Expected Price", required=True)
+    selling_price = fields.Float("Selling Price", required=True)
+    bedrooms = fields.Integer("Bedrooms")
+    living_areas = fields.Integer("Living Areas")
+    facades = fields.Integer("Facades")
+    garage = fields.Boolean("Garage")
+    garden = fields.Boolean("Garden")
+    garden_area = fields.Integer("Garden area")
+    garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
