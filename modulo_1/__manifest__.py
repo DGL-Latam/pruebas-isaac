@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Un modulo",
-    'version': "1.2",
+    'version': "1.3",
     'depends': ['base'],
     'author': "",
     'category': "",
