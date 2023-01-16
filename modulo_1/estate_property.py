@@ -12,7 +12,7 @@ class EstateProperty(models.Model):
     _description = "Estate Property Plans"
     #_order = "sequence"
     active = fields.Boolean("Active", default=True)
-    state = fields.Selection([("New"), ("Offer Received"), ("Offer Accepted"), ("Sold"), ("Canceled")], required=True, copy=False)
+    state = fields.Selection([("new","New"), ("offer received","Offer Received"), ("offer accepted","Offer Accepted"), ("sold","Sold"), ("canceld","Canceled")], required=True, copy=False)
 
     name = fields.Char("Plan", required=True)
     description = fields.Text("Description")
