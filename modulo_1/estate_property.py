@@ -2,8 +2,11 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import fields, models
+from odoo.tools import date_utils
 
 today = fields.Date.today()
+three_months = date_utils.add(today, months=3)
+
 class EstateProperty(models.Model):
     _name = "estate.property"
     _description = "Estate Property Plans"
@@ -12,7 +15,7 @@ class EstateProperty(models.Model):
     name = fields.Char("Plan", required=True)
     description = fields.Text("Description")
     postcode = fields.Char("Postcode")
-    date_availability = fields.Date("Date Availability", default =today, required=True, copy=False)
+    date_availability = fields.Date("Date Availability", default=three_months, required=True, copy=False)
     expected_price = fields.Float("Expected Price", required=True)
     selling_price = fields.Float("Selling Price", required=True, readonly=True, copy=False)
     bedrooms = fields.Integer("Bedrooms", default =2)
