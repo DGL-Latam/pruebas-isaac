@@ -27,4 +27,4 @@ class EstateProperty(models.Model):
     garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
 
     active = fields.Boolean("Active", default=True)
-    stat = fields.Selection(string="Status",selection=[("a", "A"), ("b", "B"), ("c", "C"),("d", "D")])
+    stat = fields.Selection(string="Status", selection =[("a", "A"), ("b", "B"), ("c", "C"),("d", "D")])
