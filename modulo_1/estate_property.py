@@ -12,7 +12,6 @@ class EstateProperty(models.Model):
     _description = "Estate Property Plans"
     #_order = "sequence"
     active = fields.Boolean("Active", default=True)
-    state = fields.Selection(string="Type", selection=[("new", "New"), ("offer received", "Offer Received"), ("offer accepted", "Offer Accepted"), ("sold", "Sold"), ("canceled", "Canceled")])
 
     name = fields.Char("Plan", required=True)
     description = fields.Text("Description")
@@ -27,3 +26,6 @@ class EstateProperty(models.Model):
     garden = fields.Boolean("Garden")
     garden_area = fields.Integer("Garden area")
     garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
+    state = fields.Selection(string="Type",
+                             selection=[("n", "New"), ("or", "Offer Received"), ("oa", "Offer Accepted"), ("s", "Sold"),
+                                        ("c", "Canceled")])
