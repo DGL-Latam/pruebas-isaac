@@ -6,7 +6,7 @@
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <tree string="Channel">
-            <field name="name"/>
+            <field name="A"/>
         </tree>
         </field>
     </record>
