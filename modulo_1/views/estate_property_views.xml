@@ -12,6 +12,6 @@
             action="test_model_action"
             name="Test Model Action"
             groups="base.group_user"
-            sequence="10"/>
+            sequence="60"/>
 
 </odoo>
