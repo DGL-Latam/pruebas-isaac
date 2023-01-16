@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <odoo>
-    <!--
     <record id="estate_property_action" model="ir.actions.act_window">
         <field name="name">Estate Property</field>
         <field name="res_model">estate.property</field>
@@ -9,10 +8,10 @@
     </record>
 
     <menuitem
-            id="Estate_Property_menu_action"
+            id="menu_estate_property_action"
             action="estate_property_action"
-            name="Estate Property"
+            name="EPA"
             groups="base.group_user"
             sequence="10"/>
--->>
+
 </odoo>
