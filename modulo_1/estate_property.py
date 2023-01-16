@@ -24,7 +24,7 @@ class EstateProperty(models.Model):
     garage = fields.Boolean("Garage")
     garden = fields.Boolean("Garden")
     garden_area = fields.Integer("Garden area")
-    #garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
+    garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
 
     active = fields.Boolean("Active", default=True)
-    stat = fields.Selection(string="Status", selection=[("a", "A"), ("b", "B")])
+    #state = fields.Selection(string="Status", selection=[("a", "A"), ("b", "B")])
