@@ -27,5 +27,5 @@ class EstateProperty(models.Model):
     garden_area = fields.Integer("Garden area")
     garden_orientation = fields.Selection(string="Type", selection =[("north", "North"), ("south", "South"), ("east", "East"), ("west", "West")])
     state = fields.Selection(string="State",
-                             selection=[("n", "New"), ("or", "Offer Received"), ("oa", "Offer Accepted"), ("s", "Sold"),
+                             selection=[("n", "New"), ("or", "Received"), ("oa", "Accepted"), ("s", "Sold"),
                                         ("c", "Canceled")])
