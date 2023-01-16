@@ -11,7 +11,7 @@ class EstateProperty(models.Model):
     _name = "estate.property"
     _description = "Estate Property Plans"
     #_order = "sequence"
-    active = fields.Boolean("Active", default=True)
+    #active = fields.Boolean("Active", default=True)
 
     name = fields.Char("Plan", required=True)
     description = fields.Text("Description")
