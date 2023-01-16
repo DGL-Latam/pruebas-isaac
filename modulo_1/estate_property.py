@@ -10,10 +10,10 @@ class EstateProperty(models.Model):
     _name = "estate.property"
     _description = "Estate Property Plans"
 
-    name = fields.Char("Title", required=True)
+    name = fields.Char("T", required=True)
     description = fields.Text("Description")
     postcode = fields.Char("Postcode")
-    date_availability = fields.Date("Available From", default=three_months, required=True, copy=False)
+    date_availability = fields.Date("Available_From", default=three_months, required=True, copy=False)
     expected_price = fields.Float("Expected Price", required=True)
     selling_price = fields.Float("Selling Price", required=True, readonly=False, copy=False)
     bedrooms = fields.Integer("Bedrooms", default =2)
