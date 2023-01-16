@@ -10,7 +10,6 @@ three_months = date_utils.add(today, months=3)
 class EstateProperty(models.Model):
     _name = "estate.property"
     _description = "Estate Property Plans"
-    #_order = "sequence"
 
     name = fields.Char("Title", required=True)
     description = fields.Text("Description")
