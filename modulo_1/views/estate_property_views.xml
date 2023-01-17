@@ -5,8 +5,9 @@
         <field name="name">estate.property.tree</field>
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
-            <tree string="Channel">
-            <field name="A"/>
+            <tree string="Tests">
+            <field name="Title"/>
+            <field name="Postcode"/>
         </tree>
         </field>
     </record>
