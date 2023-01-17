@@ -6,8 +6,8 @@
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-                <field name="name" width="50px"/>
-                <field name="postcode"/>
+                <field name="name" width="100px"/>
+                <field name="postcode" width="100px"/>
                 <field name="bedrooms"/>
                 <field name="living_areas"/>
                 <field name="expected_price"/>
