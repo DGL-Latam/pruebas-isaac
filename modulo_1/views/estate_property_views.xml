@@ -6,14 +6,14 @@
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-            <field name="name"/>
-            <field name="postcode"/>
-            <field name="bedrooms"/>
-            <field name="living_areas"/>
-            <field name="expected_price"/>
-            <field name="selling_price"/>
-            <field name="date_availability"/>
-        </tree>
+                <field name="name"/>
+                <field name="postcode"/>
+                <field name="bedrooms"/>
+                <field name="living_areas"/>
+                <field name="expected_price"/>
+                <field name="selling_price"/>
+                <field name="date_availability"/>
+            </tree>
         </field>
     </record>
 
