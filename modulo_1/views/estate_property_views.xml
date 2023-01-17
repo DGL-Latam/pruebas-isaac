@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <form string="My_new_house">
                 <sheet>
-                    <group>
+                    
                         <group>
                             <field name="name"/>
                         </group>
@@ -23,6 +23,7 @@
                         <group>
                             <field name="selling_price"/>
                         </group>
+
                         <notebook>
                             <page string="Description">
                                 <group>
@@ -37,7 +38,7 @@
                                 </group>
                             </page>
                         </notebook>
-                    </group>
+
                 </sheet>
             </form>
         </field>
