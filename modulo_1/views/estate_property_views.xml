@@ -23,6 +23,7 @@
                         <group>
                             <field name="selling_price"/>
                         </group>
+                        <group>
                         <notebook>
                             <page string="Description">
                                 <field name="description"/>
@@ -35,6 +36,7 @@
                                 <field name="garden_orientation"/>
                             </page>
                         </notebook>
+                        </group>
                     </group>
                 </sheet>
             </form>
