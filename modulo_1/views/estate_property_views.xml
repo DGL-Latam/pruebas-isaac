@@ -5,9 +5,12 @@
         <field name="name">estate.property.form</field>
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
-            <form string="My new house">
+            <form string="My_new_house">
                 <sheet>
                     <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
                         <group>
                             <field name="postcode"/>
                         </group>
