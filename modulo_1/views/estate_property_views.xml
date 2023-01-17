@@ -7,11 +7,11 @@
         <field name="arch" type="xml">
             <tree string="Tests">
                 <field name="name" width="100px"/>
-                <field name="postcode" width="100px"/>
-                <field name="bedrooms"/>
+                <field name="postcode" width="10px"/>
+                <field name="bedrooms" width="20px"/>
                 <field name="living_areas"/>
-                <field name="expected_price"/>
-                <field name="selling_price"/>
+                <field name="expected_price" width="30px"/>
+                <field name="selling_price" width="30px"/>
                 <field name="date_availability"/>
             </tree>
         </field>
