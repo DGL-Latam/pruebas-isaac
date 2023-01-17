@@ -14,6 +14,7 @@
                 <field name="living_areas"/>
                 <field name="facades"/>
                 <filter name="state" string="available" domain="['|', ('state', '=', 'new'), ('state', '=', 'offerReceived')]"/>
+                <filter name="groupby_zp" string="Postcode" context="{'group_by': 'postcode'}"/>
             </search>
         </field>
     </record>
