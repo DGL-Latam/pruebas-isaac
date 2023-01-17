@@ -23,20 +23,20 @@
                         <group>
                             <field name="selling_price"/>
                         </group>
-                        <group>
                         <notebook>
-                            <page string="Description">
-                                <field name="description"/>
-                                <field name="bedrooms"/>
-                                <field name="living_areas"/>
-                                <field name="facades"/>
-                                <field name="garage"/>
-                                <field name="garden"/>
-                                <field name="garden_area"/>
-                                <field name="garden_orientation"/>
-                            </page>
+                            <group>
+                                <page string="Description">
+                                    <field name="description"/>
+                                    <field name="bedrooms"/>
+                                    <field name="living_areas"/>
+                                    <field name="facades"/>
+                                    <field name="garage"/>
+                                    <field name="garden"/>
+                                    <field name="garden_area"/>
+                                    <field name="garden_orientation"/>
+                                </page>
+                            </group>
                         </notebook>
-                        </group>
                     </group>
                 </sheet>
             </form>
