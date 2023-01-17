@@ -13,7 +13,7 @@
                 <field name="bedrooms"/>
                 <field name="living_areas"/>
                 <field name="facades"/>
-                <filter name="state" string="available" domain="[('state', '=', 'new'), '|', ('state', '=', 'offerReceived')]"/>
+                <filter name="state" string="available" domain="['|', ('state', '=', 'new'), ('state', '=', 'offerReceived')]"/>
             </search>
         </field>
     </record>
