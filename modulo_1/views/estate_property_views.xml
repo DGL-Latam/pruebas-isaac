@@ -12,7 +12,7 @@
                 <field name="bedrooms"/>
                 <field name="living_areas"/>
                 <field name="facades"/>
-                <filter name="Filter" string="Archived" domain="[('bedrooms', '>', 1)]"/>
+                <filter name="Filter_1" string="Bedrooms>1" domain="[('bedrooms', '>', 1)]"/>
             </search>
         </field>
     </record>
