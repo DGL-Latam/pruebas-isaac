@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
 
-    <search string="Search">
+    <search string="Seek">
         <field name="name"/>
         <field name="postcode"/>
         <field name="expected_price"/>
