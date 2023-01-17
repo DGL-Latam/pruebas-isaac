@@ -24,8 +24,8 @@
                             <field name="selling_price"/>
                         </group>
                         <notebook>
-                            <group>
-                                <page string="Description">
+                            <page string="Description">
+                                <group>
                                     <field name="description"/>
                                     <field name="bedrooms"/>
                                     <field name="living_areas"/>
@@ -34,8 +34,8 @@
                                     <field name="garden"/>
                                     <field name="garden_area"/>
                                     <field name="garden_orientation"/>
-                                </page>
-                            </group>
+                                </group>
+                            </page>
                         </notebook>
                     </group>
                 </sheet>
