@@ -7,25 +7,19 @@
         <field name="arch" type="xml">
             <form string="My new house">
                 <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button name="estateProperty" type="object"
-                                class="oe_stat_button" icon="fa-star">
-                            <div class="o_stat_info">
-                                <field name="leads_count" class="o_stat_value"/>
-                                <span class="o_stat_text">Leads</span>
-                            </div>
-                        </button>
-                    </div>
-                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
-                    <div class="oe_title">
-                        <div class="oe_edit_only">
-                            <label for="name"/>
-                        </div>
-                        <h1 class="mb32">
-                            <field name="name" class="mb16"/>
-                        </h1>
-                        <field name="active" invisible="1"/>
-                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="last_seen"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </group>
                 </sheet>
             </form>
         </field>
