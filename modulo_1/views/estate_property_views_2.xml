@@ -64,7 +64,6 @@
                 <field name="postcode"/>
                 <field name="date_availability"/>
                 <field name="expected_price"/>
-                <field name="living_areas"/>
                 <field name="selling_price"/>
             </tree>
         </field>
