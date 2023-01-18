@@ -37,4 +37,5 @@ class EstatePropertyType(models.Model):
 
     house = fields.Char("House")
     apartment = fields.Char("Apartment")
+    penthouse = fields.Char("Penthouse")
 
