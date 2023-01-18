@@ -4,14 +4,10 @@
     <!-- Busqueda -->
     <record id="estate_property_type_view_search" model="ir.ui.view">
         <field name="name">estate.property.view.search</field>
-        <field name="model">estate.property</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="property_type_id"/>
-                <field name="postcode"/>
-                <field name="date_availability"/>
-                <field name="expected_price"/>
-                <field name="selling_price"/>
+                <field name="house"/>
             </search>
         </field>
     </record>
@@ -19,13 +15,13 @@
     <!-- Formato -->
     <record id="estate_property_type_view_form" model="ir.ui.view">
         <field name="name">estate.property.type.form</field>
-        <field name="model">estate.property</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <form string="House">
                 <sheet>
                     <group>
                         <group>
-                            <field name="property_type_id"/>
+                            <field name="house"/>
                         </group>
 
                     </group>
@@ -45,10 +41,10 @@
 <!-- Lista -->
     <record id="estate_property_type_view_tree" model="ir.ui.view">
         <field name="name">estate.property.type.tree</field>
-        <field name="model">estate.property</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-                <field name="property_type_id"/>
+                <field name="house"/>
             </tree>
         </field>
     </record>
@@ -56,20 +52,20 @@
     <!-- Formato -->
     <record id="estate_property_type_view_form" model="ir.ui.view">
         <field name="name">estate.property.type.form</field>
-        <field name="model">estate.property</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <form string="House">
                 <sheet>
                     <group>
                         <group>
-                            <field name="property_type_id"/>
+                            <field name="house"/>
                         </group>
                     </group>
                     <notebook>
                             <page string="Description">
                                 <group>
 
-                                    <field name="property_type_id"/>
+                                    <field name="house"/>
 
                                 </group>
                             </page>
@@ -83,7 +79,7 @@
     <!-- Inicio -->
     <record id="estate_property_action_type" model="ir.actions.act_window">
         <field name="name">Estate Property Type</field>
-        <field name="res_model">estate.property</field>
+        <field name="res_model">estate.property.type</field>
         <field name="view_mode">tree,form</field>
     </record>
 
