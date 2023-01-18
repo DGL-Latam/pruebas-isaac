@@ -103,7 +103,7 @@
     <menuitem
             id="menu_estate_property_action_2"
             action="estate_property_action"
-            name="Estate Property Action"
+            name="Settings"
             parent="menu_estate_property_action"
             groups="base.group_user"
             sequence="10"/>
@@ -111,7 +111,7 @@
     <menuitem
             id="menu_estate_property_action_2_1"
             action="estate_property_action"
-            name="Estate Property Action"
+            name="Property Type"
             parent="menu_estate_property_action_2"
             groups="base.group_user"
             sequence="10"/>
