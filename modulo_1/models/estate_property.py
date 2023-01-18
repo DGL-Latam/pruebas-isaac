@@ -29,3 +29,8 @@ class EstateProperty(models.Model):
                              copy=False)
 
     active = fields.Boolean("Active", default=True)
+
+class EstatePropertyType(models.Model):
+    _name = "estate.property.type"
+
+    name = fields.Char("Title 1", required=True)
