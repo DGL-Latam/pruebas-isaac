@@ -3,14 +3,15 @@
 
     <!-- Busqueda -->
     <record id="estate_property_type_view_search" model="ir.ui.view">
-        <field name="name">estate.property.type.view.search</field>
-        <field name="model">estate.property.type</field>
+        <field name="name">estate.property.view.search</field>
+        <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="house"/>
-                <field name="apartment"/>
-                <field name="penthouse"/>
-
+                <field name="property_type_id"/>
+                <field name="postcode"/>
+                <field name="date_availability"/>
+                <field name="expected_price"/>
+                <field name="selling_price"/>
             </search>
         </field>
     </record>
@@ -24,13 +25,7 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="house"/>
-                        </group>
-                        <group>
-                            <field name="apartment"/>
-                        </group>
-                        <group>
-                            <field name="penthouse"/>
+                            <field name="property_type_id"/>
                         </group>
 
                     </group>
@@ -53,9 +48,7 @@
         <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-                <field name="house"/>
-                <field name="apartment"/>
-                <field name="penthouse"/>
+                <field name="property_type_id"/>
             </tree>
         </field>
     </record>
@@ -69,20 +62,14 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="house"/>
-                        </group>
-                        <group>
-                            <field name="apartment"/>
-                        </group>
-                        <group>
-                            <field name="penthouse"/>
+                            <field name="property_type_id"/>
                         </group>
                     </group>
                     <notebook>
                             <page string="Description">
                                 <group>
 
-                                    <field name="apartment"/>
+                                    <field name="property_type_id"/>
 
                                 </group>
                             </page>
