@@ -107,7 +107,7 @@
             groups="base.group_user" sequence="10"/>
 
     <menuitem
-            id="menu_estate_property_action_2_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_2"
+            id="menu_estate_property_action_3_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_3"
             groups="base.group_user" sequence="10"/>
 
 
