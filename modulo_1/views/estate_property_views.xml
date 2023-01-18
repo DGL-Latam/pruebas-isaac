@@ -13,6 +13,7 @@
                 <field name="bedrooms"/>
                 <field name="living_areas"/>
                 <field name="facades"/>
+                <field name="property_type_id"/>
                 <filter name="state" string="available" domain="['|', ('state', '=', 'new'), ('state', '=', 'offerReceived')]"/>
                 <filter name="groupby_zp" string="Postcode" context="{'group_by': 'postcode'}"/>
             </search>
@@ -59,6 +60,7 @@
                                     <field name="garden"/>
                                     <field name="garden_area"/>
                                     <field name="garden_orientation"/>
+                                    <field name="property_type_id"/>
                                 </group>
                             </page>
                         </notebook>
@@ -81,6 +83,7 @@
                 <field name="expected_price"/>
                 <field name="selling_price"/>
                 <field name="date_availability"/>
+                <field name="property_type_id"/>
             </tree>
         </field>
     </record>
