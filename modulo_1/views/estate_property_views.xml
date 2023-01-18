@@ -147,7 +147,7 @@
     </record>
 
     <menuitem
-            id="menu_estate_property_action_3" action="estate_property_action" name="Settings" parent="menu_estate_property_action"
+            id="menu_estate_property_action_3" action="estate_property_type_view_form" name="Settings" parent="menu_estate_property_action"
             groups="base.group_user" sequence="10"/>
 
 
