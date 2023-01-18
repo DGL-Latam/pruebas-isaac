@@ -30,14 +30,12 @@ class EstateProperty(models.Model):
 
     active = fields.Boolean("Active", default=True)
 
-    property_type_id = fields.Many2one("estate.property.type.property_type", string="Property Type")
+    property_type_id = fields.Many2one("estate.property.type", string="Property Type")
 
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
-    #name = fields.Char("Property Types", required=True)
-    property_type = fields.Selection(string="Property Type", selection=[("house", "House"), ("apartment", "Apartment"), ("penthouse", "Penthouse"), ("other", "Other")])
-    #postcode = fields.Char("Postcode")
-    #date_availability = fields.Date("Available From", default=three_months, required=True, copy=False)
-    #expected_price = fields.Float("Expected Price", required=True)
-    #selling_price = fields.Float("Selling Price", required=True, readonly=False, copy=False)
+    house = fields.Char("House")
+    apartment = fields.Char("Apartment")
+
+    
