@@ -2,33 +2,29 @@
 <odoo>
 
     <!-- Busqueda -->
-    <record id="estate_property_view_search" model="ir.ui.view">
-        <field name="name">estate.property.view.search</field>
-        <field name="model">estate.property</field>
+    <record id="estate_property_type_view_search" model="ir.ui.view">
+        <field name="name">estate.property.type.view.search</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="name"/>
+                <field name="property_type"/>
                 <field name="postcode"/>
-                <field name="expected_price"/>
-                <field name="bedrooms"/>
-                <field name="living_areas"/>
-                <field name="facades"/>
-                <filter name="state" string="available" domain="['|', ('state', '=', 'new'), ('state', '=', 'offerReceived')]"/>
-                <filter name="groupby_zp" string="Postcode" context="{'group_by': 'postcode'}"/>
+                <field name="date_availability"/>
+
             </search>
         </field>
     </record>
 
     <!-- Formato -->
-    <record id="estate_property_view_form" model="ir.ui.view">
-        <field name="name">estate.property.form</field>
-        <field name="model">estate.property</field>
+    <record id="estate_property_type_view_form" model="ir.ui.view">
+        <field name="name">estate.property.type.form</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
-            <form string="My_new_house">
+            <form string="House">
                 <sheet>
                     <group>
                         <group>
-                            <field name="name"/>
+                            <field name="property_type"/>
                         </group>
                         <group>
                             <field name="postcode"/>
@@ -42,23 +38,14 @@
                         <group>
                             <field name="selling_price"/>
                         </group>
-                        <group>
-                            <field name="state"/>
-                        </group>
-
 
                     </group>
                     <notebook>
                             <page string="Description">
                                 <group>
-                                    <field name="description"/>
-                                    <field name="bedrooms"/>
-                                    <field name="living_areas"/>
-                                    <field name="facades"/>
-                                    <field name="garage"/>
-                                    <field name="garden"/>
-                                    <field name="garden_area"/>
-                                    <field name="garden_orientation"/>
+
+                                    <field name="postcode"/>
+
                                 </group>
                             </page>
                         </notebook>
@@ -68,47 +55,19 @@
     </record>
 
 <!-- Lista -->
-    <record id="estate_property_view_tree" model="ir.ui.view">
-        <field name="name">estate.property.tree</field>
-        <field name="model">estate.property</field>
+    <record id="estate_property_type_view_tree" model="ir.ui.view">
+        <field name="name">estate.property.type.tree</field>
+        <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-                <field name="name"/>
+                <field name="property_type"/>
                 <field name="postcode"/>
-                <field name="state"/>
-                <field name="bedrooms"/>
-                <field name="living_areas"/>
-                <field name="expected_price"/>
-                <field name="selling_price"/>
                 <field name="date_availability"/>
+                <field name="expected_price"/>
+                <field name="living_areas"/>
+                <field name="selling_price"/>
             </tree>
         </field>
     </record>
-
-    <!-- Inicio -->
-    <record id="estate_property_action" model="ir.actions.act_window">
-        <field name="name">Estate Property</field>
-        <field name="res_model">estate.property</field>
-        <field name="view_mode">tree,form</field>
-
-    </record>
-
-    <!-- Menu -->
-    <menuitem
-            id="menu_estate_property_action" action="estate_property_action" name="Estate Property Action" groups="base.group_user"
-            sequence="10"/>
-
-    <menuitem
-            id="menu_estate_property_action_2" action="estate_property_action" name="Advertisements" parent="menu_estate_property_action"
-            groups="base.group_user" sequence="10"/>
-
-    <menuitem
-            id="menu_estate_property_action_3" action="estate_property_action" name="Settings" parent="menu_estate_property_action"
-            groups="base.group_user" sequence="10"/>
-
-    <menuitem
-            id="menu_estate_property_action_3_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_3"
-            groups="base.group_user" sequence="10"/>
-
 
 </odoo>
