@@ -107,11 +107,11 @@
             groups="base.group_user" sequence="10"/>
 
     <menuitem
-            id="menu_estate_property_action_3_1" action="estate_property_type_view_form" name="Property Type" parent="menu_estate_property_action_3"
+            id="menu_estate_property_action_3_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_3"
             groups="base.group_user" sequence="10"/>
 
     <!-- Formato -->
-    <record id="estate_property_type_view_form" model="ir.actions.act_window">
+    <record id="estate_property_type_view_form" model="ir.ui.view">
         <field name="name">estate.property.type.form</field>
         <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
