@@ -102,9 +102,6 @@
             id="menu_estate_property_action_2" action="estate_property_action" name="Advertisements" parent="menu_estate_property_action"
             groups="base.group_user" sequence="10"/>
 
-    <menuitem
-            id="menu_estate_property_action_3" action="estate_property_action" name="Settings" parent="menu_estate_property_action"
-            groups="base.group_user" sequence="10"/>
 
     <menuitem
             id="menu_estate_property_action_3_1" action="estate_property_type_view_form" name="Property Type" parent="menu_estate_property_action_3"
@@ -148,5 +145,10 @@
             </form>
         </field>
     </record>
+
+    <menuitem
+            id="menu_estate_property_action_3" action="estate_property_action" name="Settings" parent="menu_estate_property_action"
+            groups="base.group_user" sequence="10"/>
+
 
 </odoo>
