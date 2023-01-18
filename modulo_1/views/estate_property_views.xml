@@ -103,50 +103,11 @@
             groups="base.group_user" sequence="10"/>
 
     <menuitem
-            id="menu_estate_property_action_3" action="estate_property_type_view_form" name="Settings" parent="menu_estate_property_action"
+            id="menu_estate_property_action_3" action="estate_property_action" name="Settings" parent="menu_estate_property_action"
             groups="base.group_user" sequence="10"/>
 
     <menuitem
             id="menu_estate_property_action_3_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_3"
             groups="base.group_user" sequence="10"/>
-
-    <!-- Formato -->
-    <record id="estate_property_type_view_form" model="ir.ui.view">
-        <field name="name">estate.property.type.form</field>
-        <field name="model">estate.property.type</field>
-        <field name="arch" type="xml">
-            <form string="House">
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="property_type"/>
-                        </group>
-                        <group>
-                            <field name="postcode"/>
-                        </group>
-                        <group>
-                            <field name="date_availability"/>
-                        </group>
-                        <group>
-                            <field name="expected_price"/>
-                        </group>
-                        <group>
-                            <field name="selling_price"/>
-                        </group>
-
-                    </group>
-                    <notebook>
-                            <page string="Description">
-                                <group>
-
-                                    <field name="postcode"/>
-
-                                </group>
-                            </page>
-                        </notebook>
-                </sheet>
-            </form>
-        </field>
-    </record>
 
 </odoo>
