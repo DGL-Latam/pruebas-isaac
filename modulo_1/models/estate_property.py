@@ -30,7 +30,9 @@ class EstateProperty(models.Model):
 
     active = fields.Boolean("Active", default=True)
 
+    property_type = fields.Many2one("estate.property.type", string="Property Types")
+
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
-    name = fields.Char("Title 1", required=True)
+    name = fields.Char("Property Types", required=True)
