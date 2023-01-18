@@ -90,7 +90,12 @@
         <field name="name">Estate Property</field>
         <field name="res_model">estate.property</field>
         <field name="view_mode">tree,form</field>
+    </record>
 
+    <record id="estate_property_action_type" model="ir.actions.act_window">
+        <field name="name">Estate Property Type</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <!-- Menu -->
@@ -107,7 +112,7 @@
             groups="base.group_user" sequence="10"/>
 
     <menuitem
-            id="menu_estate_property_action_3_1" action="estate_property_action" name="Property Type" parent="menu_estate_property_action_3"
+            id="menu_estate_property_action_3_1" action="estate_property_action_type" name="Property Type" parent="menu_estate_property_action_3"
             groups="base.group_user" sequence="10"/>
 
     <!-- Formato -->
