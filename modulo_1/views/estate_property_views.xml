@@ -56,7 +56,6 @@
                             <page string="Description">
                                 <group>
                                     <field name="description"/>
-                                    <field name="property_type_id"/>
                                     <field name="bedrooms"/>
                                     <field name="living_areas"/>
                                     <field name="facades"/>
