@@ -7,7 +7,7 @@
         <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <search string="Search">
-                <field name="property_type"/>
+                <field name="name"/>
             </search>
         </field>
     </record>
@@ -18,7 +18,7 @@
         <field name="model">estate.property.type</field>
         <field name="arch" type="xml">
             <tree string="Tests">
-                <field name="property_type"/>
+                <field name="name"/>
             </tree>
         </field>
     </record>
@@ -32,7 +32,7 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="property_type"/>
+                            <field name="name"/>
                         </group>
                     </group>
                 </sheet>
