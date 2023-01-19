@@ -12,32 +12,6 @@
         </field>
     </record>
 
-    <!-- Formato -->
-    <record id="estate_property_type_view_form" model="ir.ui.view">
-        <field name="name">estate.property.type.form</field>
-        <field name="model">estate.property.type</field>
-        <field name="arch" type="xml">
-            <form string="House">
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="property_type"/>
-                        </group>
-
-                    </group>
-                    <notebook>
-                            <page string="Description">
-                                <group>
-
-
-                                </group>
-                            </page>
-                        </notebook>
-                </sheet>
-            </form>
-        </field>
-    </record>
-
 <!-- Lista -->
     <record id="estate_property_type_view_tree" model="ir.ui.view">
         <field name="name">estate.property.type.tree</field>
@@ -61,15 +35,6 @@
                             <field name="property_type"/>
                         </group>
                     </group>
-                    <notebook>
-                            <page string="Description">
-                                <group>
-
-                                    <field name="property_type"/>
-
-                                </group>
-                            </page>
-                        </notebook>
                 </sheet>
             </form>
         </field>
