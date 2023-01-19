@@ -65,12 +65,10 @@
                                     <field name="garden_orientation"/>
                                 </group>
                             </page>
+                            <page string="Other info">
+                                
+                            </page>
                         </notebook>
-                    <notebook>
-                        <page string="Other info">
-                            
-                        </page>
-                    </notebook>
                 </sheet>
             </form>
         </field>
