@@ -35,4 +35,4 @@ class EstateProperty(models.Model):
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
-    property_type = fields.Char("Property Type")
+    property_type = fields.Char("Property Type", related="estate.property")
