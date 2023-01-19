@@ -35,4 +35,4 @@ class EstateProperty(models.Model):
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
-    property_type = fields.Selection(string="Property Type", selection=[("apartment", "Apartment"), ("house", "House"), ("penthouse", "Penthouse"), ("rowhouse", "Rowhouse"), ("townhouse", "Townhouse"), ("duplex", "Duplex")])
+    property_type = fields.Char("Property Type")
