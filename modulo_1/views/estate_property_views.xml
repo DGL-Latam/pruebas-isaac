@@ -63,7 +63,7 @@
                                 </group>
                             </page>
                             <page string="Offers">
-
+                                <group>
                                     <field name="offer_ids">
                                         <tree>
                                             <field name="price"/>
@@ -71,7 +71,7 @@
                                             <field name="status"/>
                                         </tree>
                                     </field>
-                                
+                                </group>
                             </page>
                         </notebook>
                 </sheet>
