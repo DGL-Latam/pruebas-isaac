@@ -31,18 +31,13 @@
                         <group>
                             <field name="tag_ids" widget="many2many_tags"/>
                             <field name="name"/>
-
                             <field name="property_type_id"/>
-
                             <field name="postcode"/>
-
-                            <field name="date_availability"/>
                         </group>
                         <group>
+                            <field name="date_availability"/>
                             <field name="expected_price"/>
-
                             <field name="selling_price"/>
-
                             <field name="state"/>
                         </group>
 
