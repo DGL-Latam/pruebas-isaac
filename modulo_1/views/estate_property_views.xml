@@ -66,7 +66,10 @@
                                 </group>
                             </page>
                             <page string="Other info">
-                                <field name="user_id"/>
+                                <group>
+                                    <field name="user_id"/>
+                                </group>
+
 
                             </page>
                         </notebook>
