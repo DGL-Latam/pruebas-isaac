@@ -45,9 +45,3 @@ class EstatePropertyTag(models.Model):
 
     name = fields.Char("Property Tag", required=True)
 
-class EstatePropertyOffer(models.Model):
-    _name = "estate.property.offer"
-
-    price = fields.Float("Price")
-    status = fields.Selection("Status", copy=False, selection=[("accepted", "Accepted"), ("refused", "Refused")])
-    
