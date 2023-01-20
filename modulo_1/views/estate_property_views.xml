@@ -67,7 +67,7 @@
                             </page>
                             <page string="Other info">
                                 <field name="user_id"/>
-                                <field name="partner_id"/>
+
                             </page>
                         </notebook>
                 </sheet>
