@@ -32,7 +32,7 @@ class EstateProperty(models.Model):
 
     property_type_id = fields.Many2one("estate.property.type", string="Property Type")
 
-    user_id = fields.Many2one('res.users', string='Salesperson', index=True, tracking=True,
+    user_id = fields.Many2one("res.users", string="Salesperson", index=True, tracking=True,
                               default=lambda self: self.env.uid)
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
