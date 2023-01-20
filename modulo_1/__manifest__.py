@@ -10,6 +10,6 @@
         'security/ir.model.access.csv',
         'views/estate_property_views.xml',
         'views/estate_property_views_2.xml'
-
+        'views/estate_property_views_3.xml'
     ]
 }
