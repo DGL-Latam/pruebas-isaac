@@ -29,6 +29,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="tag_ids" widget="many2many_tags"/>
                             <field name="name"/>
                         </group>
                         <group>
@@ -85,6 +86,7 @@
         <field name="model">estate.property</field>
         <field name="arch" type="xml">
             <tree string="Tests">
+                <field name="tag_ids" widget="many2many_tags"/>
                 <field name="name"/>
                 <field name="property_type_id"/>
                 <field name="postcode"/>
