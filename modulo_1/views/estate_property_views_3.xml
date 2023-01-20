@@ -6,4 +6,7 @@
         <field name="res_model">estate.property.tag</field>
         <field name="view.mode">tree,form</field>
     </record>
+
+    <menuitem id="menu_estate_property_action_3_1" action="estate_property_action_tag" name="Property Tag" parent="menu_estate_property_action_3"
+              groups="base.group_user" sequence="60"/>
 </odoo>
