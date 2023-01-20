@@ -68,6 +68,7 @@
                             <page string="Other info">
                                 <group>
                                     <field name="user_id"/>
+                                    <field name="partner_id"/>
                                 </group>
 
 
