@@ -30,7 +30,7 @@
     </record>
 
     <!-- Inicio -->
-    <record id="estate_property_action_tag" model="ir.actions.act_windows">
+    <record id="estate_property_action_tag" model="ir.actions.act_window">
         <field name="name">Estate Property Tag</field>
         <field name="res_model">estate.property.tag</field>
         <field name="view.mode">tree,form</field>
