@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import fields, models
+from odoo import fields, models, api
 from odoo.tools import date_utils
 today = fields.Date.today()
 three_months = date_utils.add(today, months=3)
@@ -36,6 +36,13 @@ class EstateProperty(models.Model):
     partner_id = fields.Many2one("res.partner", string="Buyer", copy=False)
     tag_ids = fields.Many2many("estate.property.tag")
     offer_ids = fields.One2many("estate.property.offer", "property_id", string="Offer")
+
+    # Computed fields
+    total_area = fields.Integer(compute="_compute_total_area")
+    @api.depends("living_areas", "garden_area")
+    def _compute_total_area(self):
+        for record in self:
+            record.total_area = record.living_areas + record.garden_area
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
@@ -53,3 +60,4 @@ class EstatePropertyOffer(models.Model):
     status = fields.Selection(string="Status", copy=False, selection=[("accepted", "Accepted"), ("refused", "Refused")])
     partner_id = fields.Many2one("res.partner", required=True)
     property_id = fields.Many2one("estate.property", required=True)
+
