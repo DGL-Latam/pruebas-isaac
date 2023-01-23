@@ -60,6 +60,7 @@
                                 <group>
                                     <field name="user_id"/>
                                     <field name="partner_id"/>
+                                    <field name="total_area"/>
                                 </group>
                             </page>
                             <page string="Offers">
