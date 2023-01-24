@@ -39,10 +39,16 @@ class EstateProperty(models.Model):
 
     # Computed fields
     total_area = fields.Integer(compute="_compute_total_area")
+    total_area = fields.Float(compute="_compute_total_area")
     @api.depends("living_areas", "garden_area")
     def _compute_total_area(self):
         for record in self:
             record.total_area = record.living_areas + record.garden_area
+
+    @api.depends("offer_ids.price")
+    def _compute_best_offer(self):
+        for record in self:
+            record.best_offer = max(record.offer_ids)
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
