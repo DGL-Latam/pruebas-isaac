@@ -47,7 +47,7 @@ class EstateProperty(models.Model):
         for record in self:
             record.total_area = record.living_areas + record.garden_area
 
-    add_offer = 0
+    add_offer = fields.Integer(default=0)
     @api.depends("offer_ids.price", "add_offer")
     def _compute_best_offer(self):
         for record in self:
