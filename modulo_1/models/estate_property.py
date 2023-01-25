@@ -2,6 +2,7 @@
 
 from odoo import fields, models, api
 from odoo.tools import date_utils
+
 today = fields.Date.today()
 three_months = date_utils.add(today, months=3)
 
@@ -68,7 +69,7 @@ class EstatePropertyOffer(models.Model):
     partner_id = fields.Many2one("res.partner", required=True)
     property_id = fields.Many2one("estate.property", required=True)
 
-    create_date = fields.Date.today()
+    create_date = today
     validity = fields.Integer(string="Validity", default=7)
     date_deadline = fields.Date(compute="_computed_date_deadline")
 
