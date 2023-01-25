@@ -39,7 +39,7 @@ class EstateProperty(models.Model):
 
     # Computed fields
     total_area = fields.Integer(compute="_compute_total_area")
-    best_offer = fields.Float(compute="_compute_best_offer")
+    best_offer = fields.Integer(compute="_compute_best_offer")
     @api.depends("living_areas", "garden_area")
     def _compute_total_area(self):
         for record in self:
