@@ -40,7 +40,7 @@ class EstateProperty(models.Model):
 
     # Computed fields
     total_area = fields.Integer(compute="_compute_total_area")
-    best_offer = fields.Float(compute="_compute_best_offer", default=0)
+    best_offer = fields.Float(compute="_compute_best_offer")
 
     @api.depends("living_areas", "garden_area")
     def _compute_total_area(self):
@@ -50,7 +50,7 @@ class EstateProperty(models.Model):
     @api.depends("offer_ids.price")
     def _compute_best_offer(self):
         for record in self:
-            record.best_offer = max(record.mapped("offer_ids.price"))
+            record.best_offer = sum(record.mapped("offer_ids.price"))
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
