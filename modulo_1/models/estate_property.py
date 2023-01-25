@@ -40,6 +40,7 @@ class EstateProperty(models.Model):
     # Computed fields
     total_area = fields.Integer(compute="_compute_total_area")
     best_offer = fields.Float(compute="_compute_best_offer")
+
     @api.depends("living_areas", "garden_area")
     def _compute_total_area(self):
         for record in self:
@@ -66,4 +67,14 @@ class EstatePropertyOffer(models.Model):
     status = fields.Selection(string="Status", copy=False, selection=[("accepted", "Accepted"), ("refused", "Refused")])
     partner_id = fields.Many2one("res.partner", required=True)
     property_id = fields.Many2one("estate.property", required=True)
+
+    create_date = fields.Date.today()
+
+    validity = fields.Integer(string="Validity", default=7)
+    date_deadline = fields.Date(string="Deadline", compute="_compute_date_deadline")
+
+    @api.dpends("create_date", "validity")
+    def _compute_date_deadline(self):
+        for record in self:
+            record.date_deadline = date_utils.add(record.create_date + date_utils.add(record.create_date, days=record.validity))
 
