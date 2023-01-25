@@ -2,6 +2,7 @@
 
 from odoo import fields, models, api
 from odoo.tools import date_utils
+import  datetime
 
 today = fields.Date.today()
 three_months = date_utils.add(today, months=3)
@@ -81,6 +82,4 @@ class EstatePropertyOffer(models.Model):
     @api.depends("create_date", "validity")
     def _computed_date_deadline(self):
         for record in self:
-            record.date_deadline = record.create_date
-            add_days = date_utils.add(record.date_deadline, record.validity)
-            record.date_deadline += add_days
+            record.date_deadline = record.create_date + datetime.timedelta(days=record.validity)
