@@ -49,7 +49,7 @@ class EstateProperty(models.Model):
 
     @api.depends("offer_ids.price")
     def _compute_best_offer(self):
-        self = 0
+        self = []
         for record in self:
             record.best_offer = max(record.mapped("offer_ids.price"))
 class EstatePropertyType(models.Model):
