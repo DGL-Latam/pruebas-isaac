@@ -82,4 +82,4 @@ class EstatePropertyOffer(models.Model):
     @api.depends("create_date", "validity")
     def _computed_date_deadline(self):
         for record in self:
-            record.date_deadline = datetime.datetime.strptime(record.create_date, "%m%d%y")
+            record.date_deadline = datetime.datetime.strptime("create_date", "%m%d%y")
