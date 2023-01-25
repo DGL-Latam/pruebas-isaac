@@ -69,7 +69,7 @@ class EstatePropertyOffer(models.Model):
     partner_id = fields.Many2one("res.partner", required=True)
     property_id = fields.Many2one("estate.property", required=True)
 
-    create_date = fields.Datet.context_today(today)
+    create_date = fields.Date.context_today(today)
     validity = fields.Integer(string="Validity", default=7)
     date_deadline = fields.Date(compute="_computed_date_deadline")
 
