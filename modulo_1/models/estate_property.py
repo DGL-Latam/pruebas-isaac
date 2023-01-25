@@ -51,7 +51,7 @@ class EstateProperty(models.Model):
     def _compute_best_offer(self):
         for record in self:
 
-            record.best_offer = max(self.mapped("offer_ids.price"))
+            record.best_offer = max(record.mapped("offer_ids.price"))
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
