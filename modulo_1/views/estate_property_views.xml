@@ -37,7 +37,7 @@
                         <group>
                             <field name="date_availability"/>
                             <field name="expected_price"/>
-                            
+                            <field name="best_offer"/>
                             <field name="selling_price"/>
                             <field name="state"/>
                         </group>
