@@ -54,6 +54,8 @@ class EstateProperty(models.Model):
             record.add_offer = sum(record.mapped("offer_ids.price"))
         if record.add_offer > 0:
             record.best_offer = max(record.mapped("offer_ids.price"))
+        else:
+            record.best_offer = 0
 class EstatePropertyType(models.Model):
     _name = "estate.property.type"
 
