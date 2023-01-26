@@ -87,4 +87,6 @@ class EstatePropertyOffer(models.Model):
     def _inverse_validity(self):
         for record in self:
             record.validity = fields.Integer()
-            
+
+        for record in self:
+            record.date_deadline = fields.Date()
