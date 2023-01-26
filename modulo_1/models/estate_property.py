@@ -3,7 +3,7 @@
 from odoo import fields, models, api
 from odoo.tools import date_utils
 import datetime
-from datetime import datetime
+
 
 today = fields.Date.today()
 three_months = date_utils.add(today, months=3)
